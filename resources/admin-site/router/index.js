@@ -21,18 +21,18 @@ router.beforeEach(async (to, from, next) => {
     if (to.name === null) {
         return next('/not-found.html');
     }
-    /*var permission = JSON.parse(localStorage.getItem('permission'));
+    var permission = JSON.parse(localStorage.getItem('permission'));
     if (whiteList.indexOf(to.path) !== -1) {
         // in the free login whitelist, go directly
         return next();
     }
     if(to.meta.permissions != 'all' && permission != null && permission.includes(to.meta.permissions) == false){
         return next('/not-authorized.html');
-    }*/
+    }
 
-    /*if (to.name === null) {
+    if (to.name === null) {
         return next('/404');
-    }*/
+    }
     return next();
     //return next(`/login`);
 });

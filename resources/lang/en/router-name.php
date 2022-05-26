@@ -40,5 +40,10 @@ return [
         'list' => 'List of Content',
         'add' => 'Create new Content',
         'edit' => 'Edit Content',
+    ],
+    'product-cate' => [
+        'list' => 'List of Product Categories',
+        'add' => 'Create new Product Categories',
+        'edit' => 'Edit Product Categories',
     ]
 ];

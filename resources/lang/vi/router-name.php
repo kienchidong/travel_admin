@@ -40,5 +40,10 @@ return [
         'list' => 'Danh sách Nội dung',
         'add' => 'Thêm mới Nội dung',
         'edit' => 'Chỉnh sửa nội dung',
+    ],
+    'product-cate' => [
+        'list' => 'Danh sách Loại sản phẩm',
+        'add' => 'Thêm mới Loại sản phẩm',
+        'edit' => 'Chỉnh sửa Loại sản phẩm',
     ]
 ];

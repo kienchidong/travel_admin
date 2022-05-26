@@ -2,8 +2,9 @@
 /node_modules
 /public/hot
 /public/storage
-/public/upload
+/public/images/upload/*
 /public/admin-site/js
+/public/mix-manifest.json
 /storage/*.key
 /vendor
 /resources/layouts/js/constants.js

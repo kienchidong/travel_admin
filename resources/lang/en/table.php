@@ -13,4 +13,5 @@ return [
     ],
     'key' => 'Key',
     'content' => 'Content',
+    'slug' => 'Slug'
 ];

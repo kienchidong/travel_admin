@@ -36,4 +36,11 @@ return [
         'EDIT' => 'Quyền Sửa Nội Dung',
         'DELETE' => 'Quyền Xóa Nội Dung',
     ],
+
+    'PRODUCT_CATE' => [
+        'VIEW' => 'Quyền Xem Danh Sách Loại sản phẩm',
+        'ADD' => 'Quyền Thêm Loại sản phẩm',
+        'EDIT' => 'Quyền Sửa Loại sản phẩm',
+        'DELETE' => 'Quyền Xóa Loại sản phẩm',
+    ],
 ];

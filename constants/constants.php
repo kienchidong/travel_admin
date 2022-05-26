@@ -23,6 +23,12 @@ const CREATE_ADMIN = 'route.create-admin';
 const UPLOAD_IMAGE = 'route.upload_image';
 const REMOVE_IMAGE = 'route.remove_image';
 
+
+const GET_LIST_PRODUCT_CATE = 'route.list_product_categories';
+const CREATE_PRODUCT_CATE = 'route.create_product_categories';
+const EDIT_PRODUCT_CATE = 'route.edit_product_categories';
+
+
 const ROLE_SUPER_ADMIN = 'permission.group.SUPERADMIN';
 const ROLE_ADMINSTRATOR = 'permission.group.ADMINSTRATOR';
 
@@ -33,4 +39,10 @@ const PERMISSION_ACCOUNT_VIEW = 'permission.ACCOUNT.VIEW';
 const PERMISSION_ACCOUNT_ADD = 'permission.ACCOUNT.ADD';
 const PERMISSION_ACCOUNT_EDIT = 'permission.ACCOUNT.EDIT';
 const PERMISSION_ACCOUNT_DELETE = 'permission.ACCOUNT.DELETE';
+
+
+const PERMISSION_PRODUCT_CATE_VIEW = 'permission.PRODUCT_CATE.VIEW';
+const PERMISSION_PRODUCT_CATE_ADD = 'permission.PRODUCT_CATE.ADD';
+const PERMISSION_PRODUCT_CATE_EDIT = 'permission.PRODUCT_CATE.EDIT';
+const PERMISSION_PRODUCT_CATE_DELETE = 'permission.PRODUCT_CATE.DELETE';
 

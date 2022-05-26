@@ -30,6 +30,14 @@ $router->prefix('/')->middleware('auth:admin')->group(function () use ($router) 
 
     $router->post('/createAdmin', 'AdminController@store')->name(CREATE_ADMIN);
 
+
+    /*product categories*/
+    $router->prefix('/product')->namespace('Products')->group(function () use ($router) {
+        $router->get('/list-categories', 'ProductCategoryController@index')->name(GET_LIST_PRODUCT_CATE);
+        $router->post('/create-categories', 'ProductCategoryController@store')->name(CREATE_PRODUCT_CATE);
+    });
+    /*product categories*/
+
     $router->get('/', 'AdminController@index')->where(['all' => '.*']);
     $router->get('/{all}', 'AdminController@index')->where('all', '(.*)')->name(ADMIN_INDEX);
 });

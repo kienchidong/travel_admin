@@ -36,4 +36,10 @@ return [
         'EDIT' => 'Can Edit Content',
         'DELETE' => 'Can Delete Content',
     ],
+    'PRODUCT_CATE' => [
+        'VIEW' => 'Can View List of Product Categories',
+        'ADD' => 'Can Add Product Category',
+        'EDIT' => 'Can Edit Product Category',
+        'DELETE' => 'Can Delete Product Category',
+    ],
 ];

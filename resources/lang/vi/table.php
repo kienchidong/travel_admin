@@ -13,4 +13,5 @@ return [
     ],
     'key' => 'Từ Khóa',
     'content' => 'Nội dung',
+    'slug' => 'Slug'
 ];

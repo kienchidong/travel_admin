@@ -247,6 +247,19 @@
                                 permission: 'all',
                             },
                         ]
+                    },{
+                        icon: 'fa-files-o',
+                        link: '#',
+                        text: 'Product',
+                        permission: 'all',
+                        listChildren: [
+                            {
+                                icon: 'fa-spinner',
+                                link: '/list-product-categories.html',
+                                text: 'router-name.product-cate.list',
+                                permission: this.$myConstant.PERMISSION_PRODUCT_CATE_VIEW,
+                            }
+                        ]
                     },
                 ]
             }

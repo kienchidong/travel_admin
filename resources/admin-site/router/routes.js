@@ -8,6 +8,7 @@ import TestComponent from "../pages/TestComponent";
 import ErrorComponent from "../pages/errors/ErrorComponent";
 import CreateAdmin from "../pages/admin/CreateAdmin";
 import LoadingExample from "../pages/Examples/LoadingExample";
+import ListProductCategories from "../pages/productCategories/ListProductCategories";
 
 
 const routes = [
@@ -49,6 +50,12 @@ const routes = [
                 name: "test3",
                 component: TestComponent,
                 meta: {permissions: 'all'}
+            },
+            {
+                path: "list-product-categories.html",
+                name: "listProductCategories",
+                component: ListProductCategories,
+                meta: {permissions: constant.PERMISSION_PRODUCT_CATE_VIEW}
             },
             {
                 path: "/not-found.html",
