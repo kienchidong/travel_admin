@@ -9,6 +9,8 @@ import ErrorComponent from "../pages/errors/ErrorComponent";
 import CreateAdmin from "../pages/admin/CreateAdmin";
 import LoadingExample from "../pages/Examples/LoadingExample";
 import ListProductCategories from "../pages/productCategories/ListProductCategories";
+import ListProducts from "../pages/products/ListProducts";
+import ActionProduct from "../pages/products/ActionProduct";
 
 
 const routes = [
@@ -56,6 +58,18 @@ const routes = [
                 name: "listProductCategories",
                 component: ListProductCategories,
                 meta: {permissions: constant.PERMISSION_PRODUCT_CATE_VIEW}
+            },
+            {
+                path: "list-product.html",
+                name: "listProduct",
+                component: ListProducts,
+                meta: {permissions: constant.PERMISSION_PRODUCT_VIEW}
+            },
+            {
+                path: "create-product.html",
+                name: "creatProduct",
+                component: ActionProduct,
+                meta: {permissions: constant.PERMISSION_PRODUCT_ADD}
             },
             {
                 path: "/not-found.html",

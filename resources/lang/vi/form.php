@@ -17,5 +17,6 @@
             'content' => 'Nội Dung',
             'image' => 'Hình ảnh',
             'tag' => 'Tags',
-        ]
+        ],
+        'imageDetail' => 'Hình ảnh chi tiết'
     ];

@@ -1,0 +1,14 @@
+.img--product-pv {
+    width: 20%;
+}
+
+.parent--hover .hover--hidden {
+    display: none;
+    cursor: pointer;
+    color: #0c0c0c;
+}
+
+.parent--hover:hover > .hover--hidden {
+    display: inline-block;
+}
+

@@ -15,10 +15,10 @@
                     <div class="box-body">
                         <div class=" clearfix" v-if="totalPage > 1">
                             <paginate-component
-                                :total-page="totalPage"
-                                v-model="currentPage"
-                                class-paginate="pagination-sm no-margin"
-                                @handler="getListAdmin"
+                                    :total-page="totalPage"
+                                    v-model="currentPage"
+                                    class-paginate="pagination-sm no-margin"
+                                    @handler="getListAdmin"
                             />
 
                         </div>
@@ -32,7 +32,8 @@
                             <tbody>
                             <tr v-for="(item, index) in table.data">
                                 <slot v-for="(columnIndex, indexColumn) in table.index">
-                                    <td :key="indexColumn" :style="columnIndex == 'image' ? 'max-width: 35px' : ''" v-html="collumnItem(index, columnIndex)"></td>
+                                    <td :key="indexColumn" :style="columnIndex == 'image' ? 'max-width: 35px' : ''"
+                                        v-html="collumnItem(index, columnIndex)"></td>
                                 </slot>
                                 <td>
                                     <div class="input-group-prepend">
@@ -62,7 +63,6 @@
                             </tfoot>
                         </table>
                     </div>
-                    <create-category/>
                 </div>
             </div>
         </div>
@@ -70,15 +70,10 @@
 </template>
 
 <script>
-    import PaginateComponent from "../../components/PaginateComponent";
-    import CreateCategory from "./CreateCategory";
-
     const table_columns = ['table.#', 'account.admins.name', 'table.banner.redirect_url', 'table.banner.image', 'table.status', 'account.admins.action'];
     const table_index = ['#', 'name', 'slug', 'image', 'status'];
-
     export default {
-        name: "ListProductCategories",
-        components: {CreateCategory, PaginateComponent},
+        name: "ListProducts",
         data() {
             return {
                 table: {
@@ -100,14 +95,14 @@
             }
         },
         mounted() {
-            this.getListCate();
-            GlobalEvent.listen('getListCate', (data) => {
-                this.getListCate();
+            this.getListProduct();
+            GlobalEvent.listen('getListProduct', (data) => {
+                this.getListProduct();
             })
         },
         methods: {
-            getListCate() {
-                this.$axios.get(this.laravelRoutes(this.$myConstant.GET_LIST_PRODUCT_CATE), {params: this.formLoad}).then(response => {
+            getListProduct() {
+                this.$axios.get(this.laravelRoutes(this.$myConstant.GET_LIST_PRODUCT), {params: this.formLoad}).then(response => {
                     let {data} = response;
                     this.table.data = data.lists;
                     this.totalPage = data.total_page;
@@ -130,8 +125,10 @@
                     }
                 }
             },
+
             create() {
-                GlobalEvent.fire('showModalCreateategory', {})
+                //GlobalEvent.fire('dataProduct', {})
+                this.$router.push({ name: 'creatProduct', params: {} });
             },
             editCate(item, lock = false) {
                 if (lock == true) {

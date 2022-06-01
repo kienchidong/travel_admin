@@ -17,5 +17,6 @@
             'content' => 'Content',
             'image' => 'Image',
             'tag' => 'Tags',
-        ]
+        ],
+        'imageDetail' => 'Image Detail'
     ];

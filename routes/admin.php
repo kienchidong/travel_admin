@@ -35,6 +35,10 @@ $router->prefix('/')->middleware('auth:admin')->group(function () use ($router) 
     $router->prefix('/product')->namespace('Products')->group(function () use ($router) {
         $router->get('/list-categories', 'ProductCategoryController@index')->name(GET_LIST_PRODUCT_CATE);
         $router->post('/create-categories', 'ProductCategoryController@store')->name(CREATE_PRODUCT_CATE);
+
+        $router->get('/list', 'ProductController@index')->name(GET_LIST_PRODUCT);
+        $router->POST('/createProduct', 'ProductController@store')->name(CREATE_PRODUCT);
+
     });
     /*product categories*/
 

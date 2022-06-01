@@ -1,9 +1,9 @@
 <template>
     <div class="row">
         <modal-layout
-            id="modal-create-catefory"
-            v-model="showModal"
-            :back-drop="false"
+                id="modal-create-catefory"
+                v-model="showModal"
+                :back-drop="false"
         >
             <template slot="modal_content">
                 <div class="form-horizontal">
@@ -17,6 +17,18 @@
                                        class="form-control"
                                        placeholder="Name"
                                        v-model="name"
+                                >
+                            </div>
+                        </div>
+                        <div class="form-group" v-if="changeSlug">
+                            <label class="col-sm-2 control-label">
+                                {{ $t('table.banner.redirect_url') }}:
+                            </label>
+                            <div class="col-sm-10">
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Name"
+                                       v-model="slug"
                                 >
                             </div>
                         </div>
@@ -59,8 +71,10 @@
                 showModal: false,
                 id: '',
                 name: '',
+                slug: '',
                 image: '',
-                status: 1
+                status: 1,
+                changeSlug: false,
             }
         },
         computed: {
@@ -68,6 +82,7 @@
                 return {
                     id: this.id,
                     name: this.name,
+                    slug: this.slug,
                     image: this.image,
                     status: this.status
                 }
@@ -86,16 +101,18 @@
 
                 this.id = (data.id) ?? this.id;
                 this.name = (data.name) ?? this.name;
+                this.slug = (data.slug) ?? this.slug;
                 this.image = (data.image) ?? this.image;
                 this.status = (data.status) ?? this.status;
+                this.changeSlug = true;
             });
 
             GlobalEvent.listen('editCategory', (data) => {
                 this.id = (data.id) ?? this.id;
                 this.name = (data.name) ?? this.name;
+                this.slug = (data.slug) ?? this.slug;
                 this.image = (data.image) ?? this.image;
                 this.status = (data.status) ?? this.status;
-
                 this.onSubmit();
             });
         },

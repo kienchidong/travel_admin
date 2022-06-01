@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="{{ asset('admin-site/template') }}/dist/css/skins/_all-skins.min.css">
 
     <link rel="stylesheet" href="{{ asset('flag-icons-master/css/flag-icon.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/customAdmin.css') }}">
     <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
     <script src="{{ asset('ckfinder/ckfinder.js') }}"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

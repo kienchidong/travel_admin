@@ -42,4 +42,11 @@ return [
         'EDIT' => 'Can Edit Product Category',
         'DELETE' => 'Can Delete Product Category',
     ],
+
+    'PRODUCT' => [
+        'VIEW' => 'Can View List of Product',
+        'ADD' => 'Can Add Product',
+        'EDIT' => 'Can Edit Product',
+        'DELETE' => 'Can Delete Product',
+    ],
 ];

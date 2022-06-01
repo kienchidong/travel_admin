@@ -28,6 +28,10 @@ const GET_LIST_PRODUCT_CATE = 'route.list_product_categories';
 const CREATE_PRODUCT_CATE = 'route.create_product_categories';
 const EDIT_PRODUCT_CATE = 'route.edit_product_categories';
 
+const GET_LIST_PRODUCT = 'route.list_product';
+const CREATE_PRODUCT = 'route.create_product';
+const EDIT_PRODUCT = 'route.edit_product';
+
 
 const ROLE_SUPER_ADMIN = 'permission.group.SUPERADMIN';
 const ROLE_ADMINSTRATOR = 'permission.group.ADMINSTRATOR';
@@ -45,4 +49,9 @@ const PERMISSION_PRODUCT_CATE_VIEW = 'permission.PRODUCT_CATE.VIEW';
 const PERMISSION_PRODUCT_CATE_ADD = 'permission.PRODUCT_CATE.ADD';
 const PERMISSION_PRODUCT_CATE_EDIT = 'permission.PRODUCT_CATE.EDIT';
 const PERMISSION_PRODUCT_CATE_DELETE = 'permission.PRODUCT_CATE.DELETE';
+
+const PERMISSION_PRODUCT_VIEW = 'permission.PRODUCT.VIEW';
+const PERMISSION_PRODUCT_ADD = 'permission.PRODUCT.ADD';
+const PERMISSION_PRODUCT_EDIT = 'permission.PRODUCT.EDIT';
+const PERMISSION_PRODUCT_DELETE = 'permission.PRODUCT.DELETE';
 

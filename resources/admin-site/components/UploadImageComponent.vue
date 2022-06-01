@@ -20,7 +20,7 @@
                 </button>
             </div>
         </div>
-        <img :src="imageShow" alt="" class="image-preview">
+        <img :src="imageShow" alt="" :class="classImage">
     </div>
 </template>
 
@@ -45,6 +45,10 @@
             autoRemove: {
                 type: Boolean,
                 default: true
+            },
+            classImage: {
+                type: String,
+                default: 'image-preview'
             }
         },
         data() {

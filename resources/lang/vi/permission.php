@@ -43,4 +43,10 @@ return [
         'EDIT' => 'Quyền Sửa Loại sản phẩm',
         'DELETE' => 'Quyền Xóa Loại sản phẩm',
     ],
+    'PRODUCT' => [
+        'VIEW' => 'Quyền Xem Danh Sách Sản Phẩm',
+        'ADD' => 'Quyền Thêm Sản Phẩm',
+        'EDIT' => 'Quyền Sửa Sản Phẩm',
+        'DELETE' => 'Quyền Xóa Sản Phẩm',
+    ],
 ];
